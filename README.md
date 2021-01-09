@@ -4,7 +4,13 @@
 
 Tetris multiplayer game
 
-Create .env api folder, example file:
+### INSTALL
+
+```html
+cd api && run: npm run update
+```
+
+Create a file .env in api folder, example .env file:
 
 ```html
 API_PORT=1337
@@ -14,16 +20,10 @@ MONGO_PASSWORD=password
 MONGO_HOST=localhost
 ```
 
-Create .env ui folder, example file:
+Create a file .env in ui folder, example .env file:
 
 ```html
 REACT_APP_API=http://localhost:1337
-```
-
-### INSTALL
-
-```html
-cd api && run: npm run update
 ```
 
 ### RUN
