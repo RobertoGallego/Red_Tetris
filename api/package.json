@@ -1,0 +1,33 @@
+{
+  "name": "red_tetris",
+  "version": "1.0.0",
+  "description": "42 project",
+  "main": "index.js",
+  "scripts": {
+    "test": "ts-node-dev src/index.ts",
+    "api": "ts-node -r tsconfig-paths/register src/index.ts",
+    "ui": "cd ../ui && npm start",
+    "update": "npm install && cd ../ui && npm install && cd ../api && echo Ready to start: '\\033[0;32m'npm run dev",
+    "dev": "concurrently --kill-others-on-fail \"npm run api\" \"npm run ui\""
+  },
+  "author": "groberto",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.10",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.9",
+    "@types/express": "^4.17.9",
+    "@types/mongoose": "^5.10.3",
+    "@types/morgan": "^1.9.2",
+    "@types/node": "^14.14.20",
+    "ts-node-dev": "^1.1.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.1.3"
+  }
+}

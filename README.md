@@ -1,2 +1,5 @@
 # Red_Tetris
-red tetris
+
+# RUN
+
+CD API && RUN: NPM RUN DEV
